@@ -1,0 +1,15 @@
+---
+application:
+  name: "webchat-api"
+  project: "WebChat"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "webchat"
+  version: "8.0"
+routers:
+- name: "main-webchat-api"
+  routes:
+  - application_name: "webchat-api"
+    paths:
+    - "/*"
