@@ -188,7 +188,7 @@ app.use(expressJWT({ secret: process.env.ACCESS_TOKEN_SECRET, algorithms: ['HS25
 /*--------------------------------------------------------------------------------- */
 
 
-
-httpServer.listen(3000, () => {
+var url = process.env.PORT || 3000;
+httpServer.listen(url, () => {
     console.log("listening to 3000");
 });
